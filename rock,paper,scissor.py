@@ -2,9 +2,10 @@ import random
 
 # player1 = user
 # player2 = computer
+my_list = ['R', 'P', 'S']
 def game():
     player1 = input("choose any one: 'R' for Rock, 'P' for paper,'S' for scissors\n")
-    player2 = random.choice(['R', 'P', 'S'])
+    player2 = random.choice(my_list)
 
     if player1 == player2:
         return 'It\'s a tie'
